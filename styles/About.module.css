@@ -1,5 +1,6 @@
 .about {
-	background: red;
 	font-size: 30px;
 	letter-spacing: 12px;
+	min-height: 75vh;
+	text-align: center;
 }
