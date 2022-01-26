@@ -22,14 +22,14 @@ const Header = () => {
 			<div className='border-b w-full inline-block border-blue-400 py-8'>
 				<div className='md:float-left block'>
 					<Link href='/'>
-						<span className='cursor-pointer font-bold text-4xl text-white mr-3'>
+						<span className='cursor-pointer font-bold text-3xl text-white mr-3'>
 							Food Blog
 						</span>
 					</Link>
-					<span className='cursor-pointer font-bold text-white mr-2'>
+					<span className='cursor-pointer text-base text-white mr-2'>
 						<Link href='/about'>About</Link>
 					</span>
-					<span className='cursor-pointer font-bold text-white mr-2'>
+					<span className='cursor-pointer text-base text-white mr-2'>
 						<Link href='/contact'>Contact Us</Link>
 					</span>
 				</div>
