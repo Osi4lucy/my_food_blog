@@ -29,9 +29,6 @@ const Header = () => {
 					<span className='cursor-pointer text-base text-white mr-2'>
 						<Link href='/about'>About</Link>
 					</span>
-					<span className='cursor-pointer text-base text-white mr-2'>
-						<Link href='/contact'>Contact Us</Link>
-					</span>
 				</div>
 				<div className='hidden md:float-left md:contents'>
 					{categories.map((category, index) => (

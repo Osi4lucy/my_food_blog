@@ -15,9 +15,15 @@ const PostCard = ({ post }) => (
 			/>
 		</div>
 
-		<h1 className='transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold'>
+		<h1 className='transition duration-700 text-center mb-4 cursor-pointer hover:text-pink-600 text-3xl font-semibold'>
 			<Link href={`/post/${post.slug}`}>{post.title}</Link>
 		</h1>
+		<h4 className='transition duration-700 text-center mb-2 cursor-pointer hover:text-pink-600 '>
+			Preparation Time: {post.preparationTime}
+		</h4>
+		<h4 className='transition duration-700 text-center mb-4 cursor-pointer hover:text-pink-600 '>
+			Difficulty Level: {post.difficultyLevel}
+		</h4>
 		<div className='block lg:flex text-center items-center justify-center mb-8 w-full'>
 			<div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 items-center'>
 				<Image

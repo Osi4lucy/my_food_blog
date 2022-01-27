@@ -20,6 +20,8 @@ export const getPosts = async () => {
 						createdAt
 						slug
 						title
+						preparationTime
+						difficultyLevel
 						excerpt
 						featuredImage {
 							url

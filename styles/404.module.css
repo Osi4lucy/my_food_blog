@@ -4,17 +4,21 @@
 	right: 20%;
 	bottom: 20%;
 	display: flex;
+	/* position: absolute; */
 	align-items: center;
 	justify-content: center;
-
+	/* background: #fff; */
 	padding: 30px;
-	border-radius: 5px;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	/* border-radius: 5px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); */
 	min-height: 77vh;
 }
 .pageNotFound .content {
 	text-align: center;
-	max-width: 600px;
+	max-width: auto;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .content h1 {
 	font-size: 18vw;
@@ -58,5 +62,7 @@
 
 .content .btn a:hover {
 	color: #fff;
-	background: #69a6ce;
+	background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%),
+		linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+		linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
