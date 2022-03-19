@@ -2,12 +2,13 @@ import Head from 'next/head';
 import { FeaturedPosts } from '../sections/index';
 import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';
+import { POSTS_PER_PAGE } from '../config';
 
 export default function Home({ posts }) {
 	return (
 		<>
 			<Head>
-				<title> Healthy Blog | Home</title>
+				<title> Food Blog | Home</title>
 			</Head>
 			<div className='container mx-auto px-10 mb-8'>
 				<FeaturedPosts />
@@ -34,5 +35,6 @@ export async function getStaticProps() {
 	const posts = (await getPosts()) || [];
 	return {
 		props: { posts },
+		revalidate: 1,
 	};
 }

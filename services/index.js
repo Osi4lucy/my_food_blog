@@ -43,7 +43,7 @@ export const getPosts = async () => {
 
 export const getCategories = async () => {
 	const query = gql`
-		query GetGategories {
+		query GetCategories {
 			categories {
 				name
 				slug
@@ -61,6 +61,8 @@ export const getPostDetails = async (slug) => {
 		query GetPostDetails($slug: String!) {
 			post(where: { slug: $slug }) {
 				title
+				preparationTime
+				difficultyLevel
 				excerpt
 				featuredImage {
 					url
@@ -98,6 +100,7 @@ export const getSimilarPosts = async (categories, slug) => {
 				last: 3
 			) {
 				title
+
 				featuredImage {
 					url
 				}
@@ -164,7 +167,10 @@ export const getCategoryPost = async (slug) => {
 						createdAt
 						slug
 						title
+						preparationTime
+						difficultyLevel
 						excerpt
+
 						featuredImage {
 							url
 						}
@@ -198,6 +204,7 @@ export const getFeaturedPosts = async () => {
         }
         title
         slug
+						
         createdAt
       }
     }   
