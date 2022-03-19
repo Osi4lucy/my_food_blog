@@ -76,3 +76,9 @@
 		linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
 		linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
+
+@media (min-width: 320px) {
+	.submit .content {
+		padding: 30px;
+	}
+}
