@@ -27,7 +27,7 @@ const Header = () => {
 						</span>
 					</Link>
 					<span className='cursor-pointer text-base text-white mr-2'>
-						<Link href='/about'>About</Link>
+						<Link href='/about'> About Us</Link>
 					</span>
 				</div>
 				<div className='hidden md:float-left md:contents'>
